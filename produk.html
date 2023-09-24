@@ -64,7 +64,7 @@
               <option selected disabled>-</option>
               <option value="arabica">Arabica</option>
               <option value="robusta">Robusta</option>
-              <option value="nonkopi">Non Kopi</option>
+              <option value="makanan">Makanan</option>
             </select>
             <label for="select_kopi">Pilih Jenis Kopi</label>
           </div>
@@ -144,7 +144,8 @@
             </div>
           </div>
         </div>
-      </section>
+
+        </section>
 
       <footer class="riki-block footer-small py-4 bg-success">
         <div class="container">
@@ -189,7 +190,7 @@
         function ambilData(dipilih) {
 
           var template = ""
-          $.getJSON(sumber).then(function(data){
+          $.getJSON(sumber2).then(function(data){
             var data_kopi = data[dipilih]
             console.log(data_kopi)
             data_kopi.forEach(item => {
@@ -217,7 +218,11 @@
       
 
         /* Batas Akhir penulisan kode Javascript */
+        /* kalo fotonya ukurannya gasama pake 'height' dan 'object fit=cover'
+        trus bisa pake nodeJS, github, replit (untuk yang ada php nya) dll */
+
     </script>
 </body>
 
 </html>
+
